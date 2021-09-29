@@ -1,5 +1,10 @@
 const startGameBtn = document.getElementById('start-game-btn');
 
+const ROCK = 'ROCK';
+const PAPER = 'PAPER';
+const SCISSORS = 'SCISSORS';
+const DEFAULT_USER_CHOICE = 'ROCK';
+
 const getPlayerChoice = function () {
    const selection = prompt('Pock, Paper or scissors?');
    if (selection ) {
