@@ -21,6 +21,8 @@ const getPlayerChoice = function () {
 };
 function startGame() {
    console.log('Game is starting....');
+   const playerChoice = getPlayerChoice();
+   console.log(playerChoice);
 }
 
 startGameBtn.addEventListener('click', startGame);
