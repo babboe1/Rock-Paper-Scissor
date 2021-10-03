@@ -43,5 +43,17 @@ function startGame() {
    console.log(computerChoice);
    alert (winner);
 }
-
+const getResult = function (pChoice, cChoice) {
+   if (pChoice === cChoice) {
+      return RESULT_DRAW;
+   } else if (
+      (pChoice === ROCK && cChoice === SCISSORS) ||
+      (pChoice === SCISSORS && cChoice === PAPER) ||
+      (pChoice === PAPER && cChoice === ROCK)
+   ) {
+      return RESULT_PLAYER_WIN;
+   } else {
+      return RESULT_PLAYER_LOSE;
+   }
+};
 startGameBtn.addEventListener('click', startGame);
