@@ -31,6 +31,10 @@ const getComputerChoice = function () {
    }
 };
 function startGame() {
+   if (gameIsRunning) {
+      return;
+   }
+   gameIsRunning = true;
    console.log('Game is starting....');
    const playerChoice = getPlayerChoice();
    console.log(playerChoice);
