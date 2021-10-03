@@ -37,6 +37,8 @@ function startGame() {
    gameIsRunning = true;
    console.log('Game is starting....');
    const playerChoice = getPlayerChoice();
+   const computerChoice = getComputerChoice();
+   const winner = getResult(playerChoice, computerChoice);
    console.log(playerChoice);
 }
 
