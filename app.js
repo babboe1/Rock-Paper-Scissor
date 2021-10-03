@@ -40,6 +40,8 @@ function startGame() {
    const computerChoice = getComputerChoice();
    const winner = getResult(playerChoice, computerChoice);
    console.log(playerChoice);
+   console.log(computerChoice);
+   alert (winner);
 }
 
 startGameBtn.addEventListener('click', startGame);
