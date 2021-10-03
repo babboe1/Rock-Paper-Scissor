@@ -19,6 +19,17 @@ const getPlayerChoice = function () {
       return selection;
    }
 };
+
+const getComputerChoice = function () {
+   const randomValue = Math.random();
+   if (randomValue < 0.34) {
+      return ROCK;
+   } else if (randomValue < 0.67) {
+      return PAPER;
+   } else if (randomValue < 0.99) {
+      return SCISSORS;
+   }
+};
 function startGame() {
    console.log('Game is starting....');
    const playerChoice = getPlayerChoice();
