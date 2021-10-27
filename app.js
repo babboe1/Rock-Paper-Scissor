@@ -1,4 +1,7 @@
 const startGameBtn = document.getElementById('start-game-btn');
+const rockBtn = document.querySelector('.ROCK');
+const scissorsBtn = document.querySelector('.SCISSORS');
+const paperBtn = document.querySelector('.PAPER');
 
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
