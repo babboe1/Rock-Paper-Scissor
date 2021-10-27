@@ -50,7 +50,7 @@ function startGame() {
    const winner = getResult(playerChoice, computerChoice);
    console.log(playerChoice);
    console.log(computerChoice);
-   alert (winner);
+   alert(winner);
 }
 const getResult = function (pChoice, cChoice) {
    if (pChoice === cChoice) {
