@@ -65,4 +65,7 @@ const getResult = function (pChoice, cChoice) {
       return RESULT_PLAYER_LOSE;
    }
 };
-startGameBtn.addEventListener('click', startGame);
+// startGameBtn.addEventListener('click', startGame);
+rockBtn.addEventListener('click', startGame);
+scissorsBtn.addEventListener('click', startGame);
+paperBtn.addEventListener('click', startGame);
