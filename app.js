@@ -40,11 +40,11 @@ const getComputerChoice = function () {
    }
 };
 function startGame() {
-   if (gameIsRunning) {
-      return;
-   }
-   gameIsRunning = true;
-   console.log('Game is starting....');
+   // if (gameIsRunning) {
+   //    return;
+   // }
+   // gameIsRunning = true;
+   // console.log('Game is starting....');
    const playerChoice = getPlayerChoice();
    const computerChoice = getComputerChoice();
    const winner = getResult(playerChoice, computerChoice);
