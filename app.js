@@ -22,9 +22,10 @@ const getPlayerChoice = function () {
    // } \
    if (rockBtn.click) {
       return ROCK;
-   }
-   {
-      return selection;
+   } else if(scissorsBtn.click) {
+      return SCISSORS;
+   } else if (paperBtn.click) {
+      return PAPER;
    }
 };
 
