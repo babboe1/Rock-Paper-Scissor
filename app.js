@@ -22,7 +22,7 @@ const getPlayerChoice = function () {
    // } \
    if (rockBtn.click) {
       return ROCK;
-   } else if(scissorsBtn.click) {
+   } else if (scissorsBtn.click) {
       return SCISSORS;
    } else if (paperBtn.click) {
       return PAPER;
@@ -45,6 +45,21 @@ function startGame() {
    // }
    // gameIsRunning = true;
    // console.log('Game is starting....');
+   const getResult = function (pChoice, cChoice) {
+      // const computerChoice = getComputerChoice();
+      // const playerChoice = getPlayerChoice();
+      if (pChoice === cChoice) {
+         return `player chose ${playerChoice}  computer chose ${computerChoice}  ${RESULT_DRAW} `;
+      } else if (
+         (pChoice === ROCK && cChoice === SCISSORS) ||
+         (pChoice === SCISSORS && cChoice === PAPER) ||
+         (pChoice === PAPER && cChoice === ROCK)
+      ) {
+         return `player chose ${playerChoice}  computer chose ${computerChoice}  ${RESULT_PLAYER_WIN} `;
+      } else {
+         return `player chose ${playerChoice} , computer chose ${computerChoice}, ${RESULT_PLAYER_LOSE} `;
+      }
+   };
    const playerChoice = getPlayerChoice();
    const computerChoice = getComputerChoice();
    const winner = getResult(playerChoice, computerChoice);
@@ -52,19 +67,6 @@ function startGame() {
    console.log(computerChoice);
    alert(winner);
 }
-const getResult = function (pChoice, cChoice) {
-   if (pChoice === cChoice) {
-      return RESULT_DRAW;
-   } else if (
-      (pChoice === ROCK && cChoice === SCISSORS) ||
-      (pChoice === SCISSORS && cChoice === PAPER) ||
-      (pChoice === PAPER && cChoice === ROCK)
-   ) {
-      return RESULT_PLAYER_WIN;
-   } else {
-      return RESULT_PLAYER_LOSE;
-   }
-};
 // startGameBtn.addEventListener('click', startGame);
 rockBtn.addEventListener('click', startGame);
 scissorsBtn.addEventListener('click', startGame);
