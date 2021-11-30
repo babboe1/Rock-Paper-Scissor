@@ -32,7 +32,7 @@ Users should be able to:
 - CSS custom properties
 - JavaScript ES6
 - mobile-first work flow 
-- 
+
 ## Author
 
 - Frontend Mentor - [@babboe1](https://www.frontendmentor.io/profile/babboe1)
