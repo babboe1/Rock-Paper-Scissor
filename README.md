@@ -18,6 +18,7 @@ Users should be able to:
 - chose between rock , scissors, papper
 - get computer response after a choice is clicked
 - get game outcome alert
+-  View the optimal layout for the site depending on their device's screen size
 
 ## My process
 
