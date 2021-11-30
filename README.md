@@ -23,7 +23,7 @@ Users should be able to:
 
 ## Links
 
--  Live Site URL: [sunnyside agency ](https://distracted-varahamihira-bd10c0.netlify.app/)
+-  Live Site URL: [Rock, Paper, Scissors](https://elastic-jepsen-3075ee.netlify.app/)
 ## My process
 
 ### Built with
