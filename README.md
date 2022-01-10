@@ -1,4 +1,4 @@
-# simple-java-script-implementation
+# Rock-Paper-Scissor
 This is a simple ROCK-PAPER-SCISSORS web application game between the user and computer.
 ## Table of contents
 
